@@ -9,7 +9,7 @@ plugins {
 
 android {
     namespace = "com.plcoding.coroutinesmasterclass"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.plcoding.coroutinesmasterclass"
@@ -61,6 +61,9 @@ dependencies {
 
     implementation(libs.room.ktx)
     implementation(libs.room.runtime)
+    implementation(libs.google.android.gms.play.services.location)
+    implementation(libs.lifecycle.runtime.compose)
+    implementation(libs.androidx.lifecycle.viewmodel.compose)
     ksp(libs.room.compiler)
 
     implementation(libs.androidx.core.ktx)
