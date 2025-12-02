@@ -16,6 +16,7 @@ import androidx.core.app.ActivityCompat
 import androidx.lifecycle.lifecycleScope
 import com.plcoding.coroutinesmasterclass.sections.coroutine_basics.fetchData
 import com.plcoding.coroutinesmasterclass.sections.flow_fundanentals.LocationObserver
+import com.plcoding.coroutinesmasterclass.sections.flows_in_practise.TimerUI
 import com.plcoding.coroutinesmasterclass.ui.theme.CoroutinesMasterclassTheme
 import com.plcoding.coroutinesmasterclass.util.CountdownScreen
 import com.plcoding.coroutinesmasterclass.util.RotatingBoxScreen
@@ -49,7 +50,8 @@ class MainActivity : ComponentActivity() {
         setContent {
             CoroutinesMasterclassTheme {
 //                RotatingBoxScreen()
-                CountdownScreen()
+//                CountdownScreen()
+                TimerUI()
             }
         }
     }

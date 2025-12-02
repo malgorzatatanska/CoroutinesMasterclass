@@ -34,8 +34,6 @@ class CountdownViewModel : ViewModel() {
 
         val startValue = input.toIntOrNull() ?: 0 // ← tutaj konwersja
         _count.value = startValue
-        println("wartosc inputa: ${input}")
-
 
         countingJob = viewModelScope.launch {
             countDownFlow().collect { value ->
